@@ -14,6 +14,23 @@ main section {
     margin: 30px 20px;
 }
 
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+.grey-a {
+    color: #76797d;
+}
+
+.white-a {
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+}
+
 /* REGOLE PARTE SUPERIORE */
 
 .container {
@@ -69,6 +86,9 @@ main section {
     }
 }
 
+
+
+
 /* regole contenuto principale */
 
 main {
@@ -87,6 +107,17 @@ main {
     right: 0;
     z-index: 100;
     background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.link-box {
+    border: 2px solid white;
+    color: white;
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin-right: 15px;
 }
 
 #center-nav {
@@ -95,8 +126,19 @@ main {
     margin-top: 20px;
     /* DEBUG */
     width: 60%;
-    height: 50px;
-    background-color: yellow;
+    
+}
+
+#center-nav ul {
+    display: flex;
+    gap: 25px;
+}
+
+li div {
+    width: 40%;
+    height: 2px;
+    background-color: #9be52d;
+    margin: 0 auto;
 }
 
 /* regole main responsive */
