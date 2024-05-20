@@ -22,10 +22,11 @@ main section {
     width: 100%;
 }
 
+
 /* regole barra sinistra fissa */
 
 #left-bar {
-    width: 350px;
+    width: 225px;
     height: calc(100vh - 70px);
     background-color: black;
     padding: 20px;
@@ -59,10 +60,19 @@ main section {
     /* align-self: flex-end; */
 }
 
+/* regole barra sinistra responsive */
+/* mobile */
+
+@media screen and (max-width: 553px) {
+    #left-bar {
+        width: 50px;
+    }
+}
+
 /* regole contenuto principale */
 
 main {
-    width: calc(100vw - 350px);
+    width: calc(100vw - 225px);
     height: calc(100vh - 70px);
     background-color: #141922;
     overflow-y: auto;
@@ -70,7 +80,7 @@ main {
 }
 
 #upgrade-bar {
-    width: calc(100% - 350px);
+    width: calc(100% - 225px);
     height: 70px;
     position: fixed;
     top: 0;
@@ -89,19 +99,56 @@ main {
     background-color: yellow;
 }
 
+/* regole main responsive */
+/* mobile */
+@media screen and (max-width: 553px) {
+    main {
+        width: calc(100vw - 50px);
+    }
+
+    #upgrade-bar {
+        width: calc(100% - 50px);
+    }
+}
+
 /* regole sezione recently played */
 
 .flex-container {
     display: flex;
     gap: 20px;
+    /* width: calc(100vw - 390px); */
 }
 
 .cards {
     /* DEBUG */
     width: calc(100% / 6 - 20px);
-    height: 200px;
+    flex-shrink: 0;
+    height: calc(100vw / 6 - 20px);
     background-color: aquamarine;
 }
+
+/* recently played responsive */
+/* tablet 1 */
+
+@media screen and (max-width: 879px) {
+    .flex-container {
+        flex-wrap: wrap;
+    }
+
+    .cards {
+        width: calc(100% / 4 - 20px);
+        height: calc(100vw / 4 - 20px);
+    }
+} 
+
+/* tablet 2 */
+@media screen and (max-width: 640px) {
+    
+    .cards {
+        width: calc(100% / 2 - 20px);
+        height: calc(100vw / 2 - 20px);
+    }
+} 
 
 /* REGOLE PLAYER INFERIORE */
 
