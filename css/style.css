@@ -10,6 +10,9 @@ body {
     font-family: "Montserrat", sans-serif;
 }
 
+main section {
+    margin: 30px 20px;
+}
 
 /* REGOLE PARTE SUPERIORE */
 
@@ -25,6 +28,35 @@ body {
     width: 350px;
     height: calc(100vh - 70px);
     background-color: black;
+    padding: 20px;
+    position: relative;
+    /* display: flex;
+    flex-direction: column; */
+}
+
+#home {
+    /* DEBUG */
+    width: 100%;
+    height: 20%;
+    background-color: blue;
+}
+
+#playlist {
+    /* DEBUG */
+    width: 100%;
+    height: 40%;
+    background-color: chocolate;
+}
+
+#profile {
+    /* DEBUG */
+    width: 100%;
+    height: 10%;
+    background-color: crimson;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    /* align-self: flex-end; */
 }
 
 /* regole contenuto principale */
@@ -34,15 +66,15 @@ main {
     height: calc(100vh - 70px);
     background-color: #141922;
     overflow-y: auto;
-    margin-top: 70px;
+    padding-top: 70px;
 }
 
 #upgrade-bar {
-    width: 100%;
+    width: calc(100% - 350px);
     height: 70px;
     position: fixed;
     top: 0;
-    left: 0;
+    right: 0;
     z-index: 100;
     background-color: rgba(0, 0, 0, 0.5);
 }
@@ -57,6 +89,19 @@ main {
     background-color: yellow;
 }
 
+/* regole sezione recently played */
+
+.flex-container {
+    display: flex;
+    gap: 20px;
+}
+
+.cards {
+    /* DEBUG */
+    width: calc(100% / 6 - 20px);
+    height: 200px;
+    background-color: aquamarine;
+}
 
 /* REGOLE PLAYER INFERIORE */
 
@@ -64,4 +109,20 @@ main {
     width: 100%;
     height: 70px;
     background-color: #282828;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.side {
+    /* DEBUG */
+    width: 20%;
+    height: 70%;
+    background-color: brown;
+}
+
+.middle {
+    width: 40%;
+    height: 80%;
+    background-color: darkgreen;
 }
