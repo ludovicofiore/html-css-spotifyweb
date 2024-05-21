@@ -49,7 +49,6 @@ ul {
     background-color: black;
     padding: 20px;
     padding-bottom: 0;
-    /* position: relative; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -72,6 +71,15 @@ ul {
 
 #logo {
     margin-bottom: 20px;
+}
+
+#alternative-logo {
+    display: none;
+    width: 100%;
+}
+
+#alternative-logo img {
+    width: 100%;
 }
 
 .left-bar-a {
@@ -187,7 +195,31 @@ ul {
 @media screen and (max-width: 553px) {
     #left-bar {
         width: 50px;
+        padding: 10px;
     }
+
+    #logo, .left-bar-a div, .no-display-text, #playlist, #spacer {
+        display: none;
+    }
+
+    #alternative-logo {
+        display: inline-block;
+    }
+
+    .left-bar-icons {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    #download-icon {
+        width: 80%;
+        margin-right: 0;
+    }
+
+    #profile-image {
+        margin-right: 0;
+    }
+
 }
 
 
