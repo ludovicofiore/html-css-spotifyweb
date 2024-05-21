@@ -482,12 +482,6 @@ li div {
     color: white;
 }
 
-/* regole parte centrale */
-.middle {
-    width: 40%;
-    height: 80%;
-    background-color: darkgreen;
-}
 
 /* regole parte destra */
 #right {
@@ -522,7 +516,7 @@ li div {
     position: absolute;
     font-size: 15px;
     top: 50%;
-    right: -50%;
+    left: 100%;
     transform: translate(-50%, -50%);
     display: none;
 }
@@ -538,3 +532,47 @@ li div {
 .bar:hover .fa-circle {
     display: inline-block;
 }
+
+
+/* regole parte centrale */
+.middle {
+    width: 40%;
+}
+
+#controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#controls a {
+    padding: 0 10px;
+    font-size: 20px;
+}
+
+#controls a .fa-circle-play {
+    font-size: 30px;
+}
+
+#controls a .fa-circle-play:hover {
+    font-size: 35px;
+}
+
+#bar-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#bar-container span {
+    color: white;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+#middle-bar {
+    width: 70%;
+    margin: 0 10px;
+}
+
