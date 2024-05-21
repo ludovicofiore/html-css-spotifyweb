@@ -95,7 +95,7 @@ ul {
     left: -20px;
 }
 
-.home-image {
+.left-bar-icons {
     display: inline-block;
     width: 15%;
     margin-right: 5px;
@@ -106,30 +106,54 @@ ul {
     color: white;
 }
 
-.left-bar-a:hover .home-image {
+.left-bar-a:hover .left-bar-icons {
     filter: none;
 }
 
 
 /* regole parte playlist */
 #playlist {
-    /* DEBUG */
+    color: white;
+    margin-top: 20px;
+}
+
+#add-playlist {
+    margin: 10px 0;
+}
+
+#add-play-icon {
+    display: inline-block;
+    font-size: 30px;
+    color: black;
+    background-color: #808080;
+    margin-right: 5px;
+    padding: 0 10px;
+}
+
+#add-play-text {
+    font-size: larger;
+}
+
+#add-playlist:hover #add-play-icon {
+    background-color: white;
+}
+
+.list-a {
     width: 100%;
-    height: 40%;
-    background-color: chocolate;
+    font-weight: bold;
+    font-size: smaller;
+    color: #76797d;
+    margin-bottom: 10px;
+}
+
+.list-a:hover {
+    color: white;
 }
 
 
 /* regole parte profilo */
 #profile {
-    /* DEBUG */
     width: 100%;
-    /* height: 50px; */
-    /* background-color: crimson; */
-    /* position: absolute;
-    bottom: 0;
-    left: 0; */
-    /* align-self: flex-end; */
 }
 
 #download-icon {
