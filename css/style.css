@@ -48,18 +48,66 @@ ul {
     height: calc(100vh - 70px);
     background-color: black;
     padding: 20px;
-    position: relative;
-    /* display: flex;
-    flex-direction: column; */
+    padding-bottom: 0;
+    /* position: relative; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
 }
 
-#home {
-    /* DEBUG */
+#container-left {
     width: 100%;
-    height: 20%;
-    background-color: blue;
 }
 
+
+/* regole parte home */
+#home {
+    width: 100%;
+}
+
+#logo img {
+    width: 80%;
+}
+
+#logo {
+    margin-bottom: 20px;
+}
+
+.home-a {
+    width: 100%;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    padding: 3px 0;
+    position: relative;
+}
+
+.home-a div {
+    height: 40px;
+    width: 5px;
+    background-color: #9be52d;
+    position: absolute;
+    left: -20px;
+}
+
+.home-image {
+    display: inline-block;
+    width: 15%;
+    margin-right: 5px;
+    filter: invert(52%) sepia(6%) saturate(248%) hue-rotate(175deg) brightness(89%) contrast(92%);
+}
+
+.home-a:hover {
+    color: white;
+}
+
+.home-a:hover .home-image {
+    filter: none;
+}
+
+
+/* regole parte playlist */
 #playlist {
     /* DEBUG */
     width: 100%;
@@ -70,11 +118,11 @@ ul {
 #profile {
     /* DEBUG */
     width: 100%;
-    height: 10%;
+    height: 50px;
     background-color: crimson;
-    position: absolute;
+    /* position: absolute;
     bottom: 0;
-    left: 0;
+    left: 0; */
     /* align-self: flex-end; */
 }
 
