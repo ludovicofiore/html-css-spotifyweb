@@ -125,7 +125,6 @@ main {
     display: flex;
     margin: 0 auto;
     margin-top: 20px;
-    /* DEBUG */
     width: 60%;
     
 }
@@ -154,21 +153,19 @@ li div {
     }
 }
 
+
+
 /* regole sezione recently played */
 
 .flex-container {
     display: flex;
     gap: 20px;
     margin: 20px 0;
-    /* width: calc(100vw - 390px); */
 }
 
 .cards {
-    /* DEBUG */
     width: calc(100% / 6 - 20px);
     flex-shrink: 0;
-    /* height: calc(100vw / 6 - 20px); */
-    /* background-color: aquamarine; */
 }
 
 .card-image img {
@@ -187,6 +184,9 @@ li div {
     font-size: 15px;
 }
 
+
+/* recently played responsive */
+/* testo responsive */
 @media screen and (max-width: 1000px) {
 
     .card-text {
@@ -198,9 +198,7 @@ li div {
     }
 }
 
-/* recently played responsive */
 /* tablet 1 */
-
 @media screen and (max-width: 879px) {
     .flex-container {
         flex-wrap: wrap;
@@ -208,7 +206,6 @@ li div {
 
     .cards {
         width: calc(100% / 4 - 20px);
-        /* height: calc(100vw / 4 - 20px); */
     }
 } 
 
@@ -217,7 +214,6 @@ li div {
     
     .cards {
         width: calc(100% / 2 - 20px);
-        /* height: calc(100vw / 2 - 20px); */
     }
 
     .card-text {
@@ -228,6 +224,24 @@ li div {
         font-size: 10px;
     }
 } 
+
+
+/* regole sezione suggerimenti */
+
+.long-subtitle {
+    display: inline-block;
+    color: #76797d;
+    margin-top: 15px;
+}
+
+
+/* regole sezione artisti */
+
+.rounded {
+    border-radius: 50%;
+}
+
+
 
 /* REGOLE PLAYER INFERIORE */
 
