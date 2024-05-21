@@ -443,17 +443,98 @@ li div {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 0 10px;
 }
 
 .side {
-    /* DEBUG */
+    display: flex;
+    align-items: center;
     width: 20%;
-    height: 70%;
-    background-color: brown;
 }
 
+/* regole parte sinistra */
+#song-image {
+    width: 20%;
+}
+
+#song-image img {
+    width: 80%;
+}
+
+#name-song a {
+    font-size: 15px;
+}
+
+#name-song a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+#side-icons {
+    margin-left: 30px;
+}
+
+#side-icons a {
+    padding: 0 5px;
+}
+
+#side-icons a:hover {
+    color: white;
+}
+
+/* regole parte centrale */
 .middle {
     width: 40%;
     height: 80%;
     background-color: darkgreen;
+}
+
+/* regole parte destra */
+#right {
+    justify-content: flex-end;
+}
+
+#right a {
+    padding: 0 10px;
+}
+
+.bar {
+    height: 3px;
+    background-color: #76797d;
+    border-radius: 3px;
+}
+
+#right-bar {
+    width: 30%;
+    flex-shrink: 0;
+}
+
+.active-bar {
+    height: 100%;
+    width: 25%;
+    background-color: white;
+    border-radius: 3px;
+    position: relative;
+}
+
+.fa-circle {
+    color: white;
+    position: absolute;
+    font-size: 15px;
+    top: 50%;
+    right: -50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.bar:hover {
+    cursor: pointer;
+}
+
+.bar:hover .active-bar {
+    background-color: #9be52d;
+}
+
+.bar:hover .fa-circle {
+    display: inline-block;
 }
