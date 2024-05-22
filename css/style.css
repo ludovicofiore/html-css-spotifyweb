@@ -36,8 +36,7 @@ ul {
 
 .container {
     display: flex;
-    /* debug */
-    width: 100%;
+    overflow: hidden;
 }
 
 
@@ -52,19 +51,10 @@ ul {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    
-}
-
-#container-left {
-    width: 100%;
 }
 
 
 /* regole parte home */
-#home {
-    width: 100%;
-}
-
 #logo img {
     width: 80%;
 }
@@ -146,6 +136,12 @@ ul {
     background-color: white;
 }
 
+/* regole lista playlist */
+#list-container {
+    overflow-y: auto;
+    flex-grow: 1;
+}
+
 .list-a {
     width: 100%;
     font-weight: bold;
@@ -160,9 +156,6 @@ ul {
 
 
 /* regole parte profilo */
-#profile {
-    width: 100%;
-}
 
 #download-icon {
     width: 10%;
